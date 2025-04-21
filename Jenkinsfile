@@ -20,7 +20,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh '/var/lib/jenkins/.local/bin/pytest tests/test_app.py'
+                sh 'python3 -m pytest test_app.py'
             }
         }
 
